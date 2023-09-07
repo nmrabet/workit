@@ -1,3 +1,10 @@
+:root {
+  --fs-400: 1rem;
+  --fs-500: 2rem;
+  --fw-regular: 400;
+  --fw-semibold: 500;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -135,11 +142,19 @@ main {
   color: #fff;
   width: 730px;
   height: 412px;
+  margin-bottom: -170px;
 }
 
 .heading {
   font-family: "fraunces", serif;
   font-size: 56px;
+}
+
+.heading::after {
+  content: url("./assets/images/bg-pattern-3.svg");
+  top: 270px;
+  right: 40px;
+  position: absolute;
 }
 
 .spacing {
@@ -156,4 +171,8 @@ footer {
   justify-content: center;
   margin: 2em 0;
   gap: 2em;
+}
+
+.pointer {
+  cursor: pointer;
 }
