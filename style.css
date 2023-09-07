@@ -1,0 +1,159 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+header {
+  position: relative;
+  height: 700px;
+  background-color: #24053e;
+  border-bottom-left-radius: 50% 5%;
+  border-bottom-right-radius: 50% 5%;
+  overflow-x: hidden;
+}
+
+.logo-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  max-width: 90%;
+  padding: 3em 2em;
+  margin: 0 auto;
+}
+
+.primary-btn {
+  display: flex;
+  background-color: #44ffa1;
+  color: #24053e;
+  font-size: 18px;
+  padding: 0.8em 1em;
+  font-weight: bold;
+  cursor: pointer;
+  border: 2px solid #44ffa1;
+}
+
+.center {
+  margin: 1.5em auto;
+}
+
+.primary-btn:hover {
+  background-color: #24053e;
+  border: 2px solid #44ffa1;
+  color: #44ffa1;
+}
+
+.secondary-btn {
+  border: none;
+  border-bottom: 3px solid #44ffa1;
+  background-color: transparent;
+  color: #fff;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.secondary-btn:hover {
+  color: #44ffa1;
+}
+
+.header-text {
+  font-family: "Fraunces", serif;
+  font-size: 80px;
+  color: #fff;
+  margin: 0 auto;
+  text-align: center;
+  max-width: 550px;
+}
+
+.header-text::before {
+  content: url("./assets/images/bg-pattern-1.svg");
+  top: 100px;
+  left: -100px;
+  position: absolute;
+}
+
+.header-text::after {
+  content: url("./assets/images/bg-pattern-2.svg");
+  top: 210px;
+  right: -80px;
+  position: absolute;
+}
+
+.img-hero {
+  position: absolute;
+  bottom: -110px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+main {
+  padding: 15em 4em;
+  height: 700px;
+  background-color: #fcf8ff;
+  border-bottom-left-radius: 50% 5%;
+  border-bottom-right-radius: 50% 5%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 3em;
+  text-align: center;
+  color: #24053e;
+  margin-bottom: 8em;
+}
+
+.number {
+  font-family: "Fraunces", serif;
+  display: inline-block;
+  padding: 10px;
+  border: 1px solid #24053e;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+}
+
+.title {
+  font-family: "Fraunces", serif;
+  margin: 1em 0;
+  font-size: 32px;
+}
+
+.text {
+  line-height: 32px;
+  font-size: 18px;
+}
+
+.founder {
+  margin: 0 10em;
+}
+
+.container {
+  position: relative;
+  bottom: 300px;
+  left: 550px;
+  padding: 4em;
+  background-color: #24053e;
+  color: #fff;
+  width: 730px;
+  height: 412px;
+}
+
+.heading {
+  font-family: "fraunces", serif;
+  font-size: 56px;
+}
+
+.spacing {
+  margin: 1.5em 0;
+}
+
+footer {
+  text-align: center;
+}
+
+.social {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 2em 0;
+  gap: 2em;
+}
