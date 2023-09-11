@@ -45,7 +45,7 @@ header {
   border: 2px solid var(--clr-hg);
 }
 
-.center {
+.btn {
   margin: 1.5em auto;
 }
 
@@ -79,10 +79,11 @@ header {
 
 .img-hero {
   position: absolute;
-  bottom: 120px;
+  bottom: -60px;
   left: 50%;
   transform: translateX(-50%);
-  max-width: 100%;
+  max-width: 490px;
+  margin: 0 1em;
 }
 
 main {
@@ -110,6 +111,10 @@ main {
   height: 50px;
 }
 
+.center {
+  margin: 1.5em auto;
+}
+
 .title {
   font-family: "Fraunces", serif;
   margin: 1em 0;
@@ -122,18 +127,17 @@ main {
 }
 
 main {
-  height: 1400px; 
+  height: 1400px;
 }
 
 .heading {
   font-family: "fraunces", serif;
   font-size: var(--fs-S);
-  text-align: center;
 }
 
 .founder {
   margin-left: auto;
-  margin-right: auto;  
+  margin-right: auto;
   z-index: -1;
   position: relative;
   width: 100%;
@@ -148,14 +152,11 @@ main {
   color: #fff;
   z-index: auto;
   max-width: 90%;
+  text-align: center;
 }
 
 .spacing {
   margin: 1.5em 0;
-}
-
-.text {
-  text-align: center;
 }
 
 footer {
@@ -196,23 +197,8 @@ footer {
     font-size: var(--fs-MM);
   }
 
-  .heading::after {
-    content: url("./assets/images/bg-pattern-3.svg");
-    top: 270px;
-    right: 40px;
-    position: absolute;
-  }
-
-  .img-hero {
-    position: absolute;
-    bottom: 180px;
-    left: 50%;
-    transform: translateX(-50%);
-    max-width: 80%;
-  }
-
   main {
-    height: 1100px; 
+    height: 1100px;
   }
 
   .founder {
@@ -227,10 +213,15 @@ footer {
     color: #fff;
     z-index: auto;
     max-width: 514px;
+    text-align: left;
+  }
+
+  .btn {
+    margin: 1.5em 0;
   }
 }
 
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 960px) {
   .header-text {
     font-size: var(--fs-L);
   }
@@ -243,8 +234,11 @@ footer {
     height: 700px;
   }
 
-  .img-hero {
-    width: 50%;
+  .header-text::before {
+    content: url("./assets/images/bg-pattern-1.svg");
+    top: 100px;
+    left: -100px;
+    position: absolute;
   }
 
   .heading::after {
@@ -265,13 +259,11 @@ footer {
     width: 730px;
     height: 412px;
     margin-bottom: -170px;
+    text-align: left;
   }
 
-  .img-hero {
-    position: absolute;
-    bottom: 0px;
-    left: 50%;
-    transform: translateX(-50%);
+  .btn {
+    margin: 1.5em 0;
   }
 
   .founder {
